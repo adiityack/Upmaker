@@ -1,0 +1,115 @@
+body {
+    background-color: #545454;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .Container-main {
+    width: 95vw;
+    height: 90vh;
+    margin: 2vh auto;
+    background-color: #323232;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  .terminal-header {
+    background-color: #3a3a3a;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid #2c2c2c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .terminal-header .mac-buttons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .mac-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .mac-buttons .red { background-color: #ff5f56; }
+  .mac-buttons .yellow { background-color: #ffbd2e; }
+  .mac-buttons .green { background-color: #27c93f; }
+  
+  .terminal-header .title-center {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+  }
+  
+  .title-center .folder-icon {
+    font-size: 18px;
+  }
+  
+  .title-center .folder-name {
+    font-size: 14px;
+  }
+  
+  .terminal-body {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px; 
+
+
+
+    max-height: 70vh;
+    overflow-y: auto;
+ 
+  }
+
+  .welcome-message{
+    padding: 30px;  
+    line-height: 1.2;
+
+  }
+
+  .welcome-message h1 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+  .highlight {
+    color: wheat; 
+    font-weight: 600;
+}
+
+.terminal-line {
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+  }
+  
+  .typed-command {
+    color: white;
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    animation: blink 1s step-start infinite;
+    color: white;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  

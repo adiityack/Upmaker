@@ -1,0 +1,15 @@
+[
+    {
+      "user_id": "user123",
+      "urls": [
+        "https://mydbbackend.onrender.com/get-data"
+      ]
+    },
+    {
+      "user_id": "user456",
+      "urls": [
+        "https://www.google.com"
+      ]
+    }
+  ]
+  
